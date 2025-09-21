@@ -1,13 +1,15 @@
-import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
+import { MemoryRouter } from "react-router";
 
 test("renders all components", () => {
   render(
     <Provider store={store}>
-      <App />
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
     </Provider>
   );
   const list = screen.getByTestId("List");
