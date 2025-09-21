@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Input from "./components/Input/Input";
+import List from "./components/List/List";
+import Layout from "./components/Layout/Layout";
+import Card from "./components/Card/Card";
+import Toolbar from "./components/Toolbar/Toolbar";
+import { sortingOptions } from "./data/constants";
+import { useSelector } from "react-redux";
+import { selectTasks } from "./slices/slice";
+import styles from "./App.module.css"
 
 function App() {
+  const tasks = useSelector(selectTasks);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <h1 className={styles.Header}>todos</h1>
+      <Card>
+        <Input />
+        <List tasks={tasks} />
+        <Toolbar sortingOptions={sortingOptions} />
+      </Card>
+    </Layout>
   );
 }
 

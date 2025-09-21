@@ -1,0 +1,10 @@
+.root {
+  min-width: 100%;
+  background: #ebe7e7;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

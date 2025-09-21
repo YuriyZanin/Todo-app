@@ -1,0 +1,20 @@
+.Toolbar {
+  display: flex;
+  font-size: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  min-height: 40px;
+}
+
+.SortButtons {
+  display: flex;
+  align-items: center;
+}
+
+.Label {
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  width: 500px;
+  box-shadow: 0 2px 2px 2px rgb(134, 132, 132);
+  text-align: left;
+}

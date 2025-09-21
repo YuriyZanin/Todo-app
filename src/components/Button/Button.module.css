@@ -1,0 +1,19 @@
+.Button {
+  border: none;
+  background-color: white;
+  height: 18px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.ButtonActive {
+  outline: none;
+  border: 1px solid rgb(201, 206, 201);
+  background-color: transparent;
+}
+
+.Button:hover {
+  outline: none;
+  border: 1px solid rgb(231, 228, 228);
+}

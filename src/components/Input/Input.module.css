@@ -1,0 +1,8 @@
+.Input {
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ebe6e6;
+}
